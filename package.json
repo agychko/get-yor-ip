@@ -1,0 +1,15 @@
+{
+  "name": "@agychko/get-ip",
+  "version": "1.0.1-alpha",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agychko/get-ip"
+  },
+  "author": "agychko <agychko@gmail.com> (https://github.com/agychko)",
+  "license": "ISC"
+}
