@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 # ${1:Get-Ip}
-Usage this utility to get your private or public IP address 
+Usage this utility to get your private or public IP address.
 ## Installation
 npm i @agychko/get-ip
 ## Usage
