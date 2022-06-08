@@ -1,14 +1,14 @@
 {
-  "name": "@agychko/get-ip",
-  "version": "1.0.2",
-  "description": "",
+  "name": "@agychko/get-your-ip",
+  "version": "1.0.1-alpha",
+  "description": "Usage this utility to get your private or public IP address",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/agychko/get-ip"
+    "url": "https://github.com/agychko/get-yor-ip"
   },
   "author": "agychko <agychko@gmail.com> (https://github.com/agychko)",
   "license": "ISC"

@@ -12,24 +12,21 @@ exports.getPrivateIp = function() {
             ip='0.0.0.0'
         }
     }
-    console.log('Your private IP address is: ', ip)
+    console.log('Your private IP address is: ' + ip)
 }
 
 exports.getPublicIp = function() {
-const https = require('https');
-https.get({
-    host: 'api.ipify.org',
-}, function(response) {
-    let ip = '';
-    response.on('data', function(d) {
-        ip += d;
-    });
-    response.on('end', function() {
+    const http = require('http');
+    http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
+    resp.on('data', function(ip) {
         if(ip){
-            console.log('Your public IP address is: ', ip);
-        } else {
-            console.log('Your public IP address is: 0.0.0.0');
+            console.log('Your public IP address is: ' + ip);
+            }
+        });
+    }).on('error', function(e){
+        if(e){
+            ip='0.0.0.0';
+            console.log('Your public IP address is: ' + ip);
         }
     });
-})
 }
